@@ -14,7 +14,17 @@
   </url>
   
   <url>
+    <loc>https://tanzaku.github.io/tags/rust/</loc>
+    <lastmod>2020-07-10T21:46:33+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tanzaku.github.io/post/2020-07-10-rust-fork-retry-resource-temporarily-unavailable/</loc>
+    <lastmod>2020-07-10T21:46:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanzaku.github.io/tags/</loc>
     <lastmod>2020-07-10T21:46:33+09:00</lastmod>
   </url>
   
@@ -33,10 +43,6 @@
   
   <url>
     <loc>https://tanzaku.github.io/page/</loc>
-  </url>
-  
-  <url>
-    <loc>https://tanzaku.github.io/tags/</loc>
   </url>
   
 </urlset>

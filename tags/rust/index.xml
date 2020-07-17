@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on tanzaku&#39;s blog</title>
+    <link>https://tanzaku.github.io/tags/rust/</link>
+    <description>Recent content in Rust on tanzaku&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 10 Jul 2020 21:46:33 +0900</lastBuildDate>
+    
+	<atom:link href="https://tanzaku.github.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rustからのプロセス起動時に fork: retry: Resource temporarily unavailable が発生した場合の対応メモ</title>
+      <link>https://tanzaku.github.io/post/2020-07-10-rust-fork-retry-resource-temporarily-unavailable/</link>
+      <pubDate>Fri, 10 Jul 2020 21:46:33 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-07-10-rust-fork-retry-resource-temporarily-unavailable/</guid>
+      <description>Rustで生存期間が短いプロセスを短時間で起動、終了を繰り返すプログラムを書いたところfork: retry: Resource temporarily unavailableというエラーが発生。
+psコマンドで確認したところ&amp;lt;defunct&amp;gt;と書かれたゾンビプロセスが大量に残存していた。
+waitでプロセスの終了を待つとゾンビプロセスは残存しなくなった。</description>
+    </item>
+    
+  </channel>
+</rss>
