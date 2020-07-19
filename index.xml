@@ -5,7 +5,7 @@
     <link>https://tanzaku.github.io/</link>
     <description>Recent content on tanzaku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Jul 2020 02:57:39 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 01:24:59 +0900</lastBuildDate>
     
 	<atom:link href="https://tanzaku.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,9 +13,23 @@
     <item>
       <title>2020 07 19 Diary</title>
       <link>https://tanzaku.github.io/post/2020-07-19-diary/</link>
-      <pubDate>Sun, 19 Jul 2020 02:57:39 +0900</pubDate>
+      <pubDate>Mon, 20 Jul 2020 01:24:59 +0900</pubDate>
       
       <guid>https://tanzaku.github.io/post/2020-07-19-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ  Choco60の組み立てが完了した。が、分割キーボード間をつなぐためのTRRSケーブルがないので使い始めるのはまだ先。
+キーキャップが足りなくて余ったキーキャップを嵌めてるところがあって、ちょっと残念な感じになっている。
+そのうち望みのキーキャップを買ってきちんと完成させたい。
+明日からは業務に関することを毎日自学することにしようと検討中。
+業務と自分の興味がずれているので仕方ない。</description>
+    </item>
+    
+    <item>
+      <title>2020 07 18 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-07-18-diary/</link>
+      <pubDate>Sun, 19 Jul 2020 02:57:39 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-07-18-diary/</guid>
       <description>少しずつ進める日常的なタスク
  麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ  Choco60の組み立てを開始した。家のニッパーいまいちだなーとかlube買い忘れてたなーとかあるけどなんとか進んでいる。半田が自信ない、短絡してないといいなあ。
 婚活は気になってる人から連絡が来なくなってしまった。悲しい。</description>
