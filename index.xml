@@ -5,10 +5,24 @@
     <link>https://tanzaku.github.io/</link>
     <description>Recent content on tanzaku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jul 2020 02:12:23 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 03:06:48 +0900</lastBuildDate>
     
 	<atom:link href="https://tanzaku.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 07 23 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-07-23-diary/</link>
+      <pubDate>Fri, 24 Jul 2020 03:06:48 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-07-23-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学  misc しまった、あざらしさんグッズ買うの忘れてた。
+分割キーボード もうダメ
+麻雀AI 中国麻雀の役の整理を継続して実施。派生形が多いから、まとめて整理するとそこまで大変ではなさそう。
+ISUCON対策 開発するツールの構想だけでも進めておきたい
+明日やること  あざらしさんグッズを買う 同時に成立しない役を確認して実装に入る  </description>
+    </item>
     
     <item>
       <title>2020 07 22 Diary</title>
