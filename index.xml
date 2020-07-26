@@ -5,10 +5,39 @@
     <link>https://tanzaku.github.io/</link>
     <description>Recent content on tanzaku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Jul 2020 03:06:48 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2020 01:39:17 +0900</lastBuildDate>
     
 	<atom:link href="https://tanzaku.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 07 26 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-07-26-diary/</link>
+      <pubDate>Mon, 27 Jul 2020 01:39:17 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-07-26-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学  misc 今日もあざらしさんグッズ買うの忘れてた。
+分割キーボード choco60は買うことにした。分割キーボードにそれほど価値を感じているわけではないが、経験としての価値。
+麻雀AI 役の実装を概ね実施した。 役の判定に必要な情報が不足しているのでそれを追加している。 それが終わったら、鳴きの対応入れて、その後役判定のテストケースを作成する。
+ISUCON対策 開発するツールの構想だけでも進めておきたい
+明日やること  あざらしさんグッズを買う 麻雀AIの実装  </description>
+    </item>
+    
+    <item>
+      <title>2020 07 25 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-07-25-diary/</link>
+      <pubDate>Sun, 26 Jul 2020 02:36:46 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-07-25-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学  misc 今日もあざらしさんグッズ買うの忘れてた。
+分割キーボード アクリルボードを破壊して、無理やりTRRSジャックをハンダ付けし直したらうまくいった。
+choco60を買うか否か
+麻雀AI 役の実装をしている。重複しない役の判定を雑にすれば明日あたり実装できそう。
+ISUCON対策 開発するツールの構想だけでも進めておきたい
+明日やること  あざらしさんグッズを買う 麻雀AIの実装  </description>
+    </item>
     
     <item>
       <title>2020 07 23 Diary</title>
