@@ -5,10 +5,22 @@
     <link>https://tanzaku.github.io/</link>
     <description>Recent content on tanzaku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Jul 2020 01:29:52 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 03:18:03 +0900</lastBuildDate>
     
 	<atom:link href="https://tanzaku.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 07 28 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-07-28-diary/</link>
+      <pubDate>Wed, 29 Jul 2020 03:18:03 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-07-28-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学  役の判定が動き始めた。それっぽく動いているので、実戦投入しつつデバッグ。点数計算については、実戦で見つけたバグは修正するがそれ以外は一旦終わりにして、とりあえずAIの改善を進める。まずはとにかく鳴くようにしてみる。
+ISUCONツールはちょっとだけ進めた。まだ実装を進める段階ではなくて勉強してAPIを理解する段階。
+でも新しい言語を学ぶと初心に帰れていい。今はGolangのお作法がよくわからない状態。</description>
+    </item>
     
     <item>
       <title>2020 07 27 Diary</title>
