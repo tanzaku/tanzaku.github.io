@@ -5,10 +5,20 @@
     <link>https://tanzaku.github.io/tags/todo/</link>
     <description>Recent content in todo on tanzaku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Jul 2020 03:18:03 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 01:16:16 +0900</lastBuildDate>
     
 	<atom:link href="https://tanzaku.github.io/tags/todo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 07 29 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-07-29-diary/</link>
+      <pubDate>Thu, 30 Jul 2020 01:16:16 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-07-29-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学  麻雀AIの役判定のバグ修正と鳴きの処理の実装を進めた。</description>
+    </item>
     
     <item>
       <title>2020 07 28 Diary</title>
