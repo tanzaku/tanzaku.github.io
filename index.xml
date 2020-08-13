@@ -5,10 +5,54 @@
     <link>https://tanzaku.github.io/</link>
     <description>Recent content on tanzaku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 01 Aug 2020 03:18:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2020 00:32:48 +0900</lastBuildDate>
     
 	<atom:link href="https://tanzaku.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 08 13 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-08-13-diary/</link>
+      <pubDate>Fri, 14 Aug 2020 00:32:48 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-08-13-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学 グラフ描画ライブラリの記事作成 マラソン復習  久しぶりの日記。 あまりにも説明するのが苦手なのでかなり危機感を持っているけど、これ改善するのかな。 とりあえず何もしないよりマシということでブログを継続していきたい。
+今日は麻雀AIを進めた。とりあえず差分計算なしのNNで評価関数を作成中。学習はpytorchとか使おうかなと思ってるけど、pytorchで計算したモデルをC++から読み込む方法は要調査。
+差分計算はその後。</description>
+    </item>
+    
+    <item>
+      <title>2020 08 05 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-08-05-diary/</link>
+      <pubDate>Thu, 06 Aug 2020 01:02:04 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-08-05-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学 グラフ描画ライブラリの記事作成 マラソン復習  マラソン終わった。がっつり真面目に参加したいなという気持ちあるけど、いつの日か。
+麻雀AIとグラフ描画ライブラリの記事作成を進める。</description>
+    </item>
+    
+    <item>
+      <title>2020 08 04 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-08-04-diary/</link>
+      <pubDate>Wed, 05 Aug 2020 00:15:10 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-08-04-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学 mm119  麻雀AIが役判定をそれなりにやってからレートが上がってきた。</description>
+    </item>
+    
+    <item>
+      <title>2020 08 02 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-08-02-diary/</link>
+      <pubDate>Mon, 03 Aug 2020 02:14:21 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-08-02-diary/</guid>
+      <description>少しずつ進める日常的なタスク
+ 麻雀AI ISUCON対策 lexerリファクタ 部屋の片付け 分割キーボードの組み立て 婚活 物件探し github.ioの自己紹介ページ書く（過去コンテストの話しとか忘れないように） 軽い筋トレ 業務に関することを自学 mm119  結局マラソンをやってしまった（公開）…改善の余地がありすぎるけどやる時間ないな。
+MIU404がとても面白い。 感覚で動いているがいつも物事の本質をなぜか見抜く伊吹藍（綾野剛）と理詰で動く志摩一未（星野源）のコンビ。 星野源が徐々に綾野剛を認めていき、心を開かされていく姿が気持ちいい。</description>
+    </item>
     
     <item>
       <title>2020 07 31 Diary</title>
@@ -203,8 +247,7 @@ waitでプロセスの終了を待つとゾンビプロセスは残存しなく�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://tanzaku.github.io/page/about/</guid>
-      <description>こんにちは。
-my history テスト</description>
+      <description>my history 競技プログラミング関連  Topcoder Codeforces AtCoder CEDEC AI Challenge SamurAI coding その他？ 第1回 Asprova  </description>
     </item>
     
   </channel>
