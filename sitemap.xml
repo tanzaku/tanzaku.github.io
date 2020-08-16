@@ -4,22 +4,37 @@
   
   <url>
     <loc>https://tanzaku.github.io/</loc>
-    <lastmod>2020-08-14T00:32:48+09:00</lastmod>
+    <lastmod>2020-08-15T21:48:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://tanzaku.github.io/post/2020-08-13-diary/</loc>
-    <lastmod>2020-08-14T00:32:48+09:00</lastmod>
+    <loc>https://tanzaku.github.io/post/</loc>
+    <lastmod>2020-08-15T21:48:39+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tanzaku.github.io/post/</loc>
-    <lastmod>2020-08-14T00:32:48+09:00</lastmod>
+    <loc>https://tanzaku.github.io/tags/pytorch/</loc>
+    <lastmod>2020-08-15T21:48:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanzaku.github.io/post/learn-pytorch-use-c&#43;&#43;/</loc>
+    <lastmod>2020-08-15T21:48:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://tanzaku.github.io/tags/</loc>
+    <lastmod>2020-08-15T21:48:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanzaku.github.io/tags/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/</loc>
+    <lastmod>2020-08-15T21:48:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanzaku.github.io/post/2020-08-13-diary/</loc>
     <lastmod>2020-08-14T00:32:48+09:00</lastmod>
   </url>
   
