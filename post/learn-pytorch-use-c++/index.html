@@ -10,7 +10,7 @@
   <title>PyTorchで学習した結果をC&#43;&#43;から利用する(Linearレイヤーのみ) - tanzaku&#39;s blog</title>
   <meta name="description" content="C&#43;&#43;で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。
 本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC&#43;&#43;で使用する方法を書きます。
-パラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。 下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができる。
+パラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができます。
 with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = net.linear1.weight.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) C&#43;&#43;からの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC&#43;&#43;からバイナリファイルを読み込んで使用すれば良いです(詳しくはここを参照ください)">
   <meta name="author" content="tanzaku"/><script type="application/ld+json">
 {
@@ -60,9 +60,9 @@ with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = 
     "name" : "tanzaku"
   },
   "headline": "PyTorchで学習した結果をC\u002b\u002bから利用する(Linearレイヤーのみ)",
-  "description" : "C\u002b\u002bで作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。\n本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC\u002b\u002bで使用する方法を書きます。\nパラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。 下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができる。\nwith open(\u0026#39;data\/weight_row=16_col=32.bin\u0026#39;, mode=\u0026#39;wb\u0026#39;) as f: x = net.linear1.weight.to(\u0026#39;cpu\u0026#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(\u0026#39;cpu\u0026#39;).detach().numpy() x.tofile(f) C\u002b\u002bからの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC\u002b\u002bからバイナリファイルを読み込んで使用すれば良いです(詳しくはここを参照ください)",
+  "description" : "C\u002b\u002bで作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。\n本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC\u002b\u002bで使用する方法を書きます。\nパラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができます。\nwith open(\u0026#39;data\/weight_row=16_col=32.bin\u0026#39;, mode=\u0026#39;wb\u0026#39;) as f: x = net.linear1.weight.to(\u0026#39;cpu\u0026#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(\u0026#39;cpu\u0026#39;).detach().numpy() x.tofile(f) C\u002b\u002bからの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC\u002b\u002bからバイナリファイルを読み込んで使用すれば良いです(詳しくはここを参照ください)",
   "inLanguage" : "ja",
-  "wordCount":  24 ,
+  "wordCount":  23 ,
   "datePublished" : "2020-08-15T21:48:39",
   "dateModified" : "2020-08-15T21:48:39",
   "image" : "https:\/\/tanzaku.github.io\/img\/avatar-icon.png",
@@ -84,7 +84,7 @@ with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = 
 <meta property="og:title" content="PyTorchで学習した結果をC&#43;&#43;から利用する(Linearレイヤーのみ)" />
 <meta property="og:description" content="C&#43;&#43;で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。
 本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC&#43;&#43;で使用する方法を書きます。
-パラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。 下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができる。
+パラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができます。
 with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = net.linear1.weight.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) C&#43;&#43;からの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC&#43;&#43;からバイナリファイルを読み込んで使用すれば良いです(詳しくはここを参照ください)">
 <meta property="og:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
 <meta property="og:url" content="https://tanzaku.github.io/post/learn-pytorch-use-c&#43;&#43;/" />
@@ -261,7 +261,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分間
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;24&nbsp;言葉
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;23&nbsp;言葉
   
   
     
@@ -289,8 +289,7 @@ if (!doNotTrack) {
         <p>C++で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。</p>
 <p>本記事では<a href="https://pytorch.org/docs/stable/generated/torch.nn.Linear.html">Linear — PyTorch 1.6.0 documentation</a>を使ったモデルで学習し、そのパラメータ(<code>A</code>,<code>b</code>)をC++で使用する方法を書きます。</p>
 <h2 id="パラメータのファイルへの出力">パラメータのファイルへの出力</h2>
-<p>Linear型の<code>A</code>は<code>weight</code>というTensor型の変数になっており、<code>b</code>は<code>bias</code>というTensor型の変数になっています。
-下記のようにするとTensor型の<code>A</code>,<code>b</code>からnumpyの生のデータを取り出しバイナリに出力することができる。</p>
+<p>Linear型の<code>A</code>は<code>weight</code>というTensor型の変数になっており、<code>b</code>は<code>bias</code>というTensor型の変数になっています。下記のようにするとTensor型の<code>A</code>,<code>b</code>からnumpyの生のデータを取り出しバイナリに出力することができます。</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/weight_row=16_col=32.bin&#39;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">linear1</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;cpu&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
     <span class="n">x</span><span class="o">.</span><span class="n">tofile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
