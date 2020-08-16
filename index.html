@@ -257,7 +257,7 @@ if (!doNotTrack) {
     </p>
     <div class="post-entry">
         
-        <p>C++で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。</p>
+        <p>C++で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込むため調査しました。</p>
 <p>本記事では<a href="https://pytorch.org/docs/stable/generated/torch.nn.Linear.html">Linear — PyTorch 1.6.0 documentation</a>を使ったモデルで学習し、そのパラメータ(<code>A</code>,<code>b</code>)をC++で使用する方法を書きます。</p>
 <h2 id="パラメータのファイルへの出力">パラメータのファイルへの出力</h2>
 <p>Linear型の<code>A</code>は<code>weight</code>というTensor型の変数になっており、<code>b</code>は<code>bias</code>というTensor型の変数になっています。下記のようにするとTensor型の<code>A</code>,<code>b</code>からnumpyの生のデータを取り出しバイナリに出力することができます。</p>
