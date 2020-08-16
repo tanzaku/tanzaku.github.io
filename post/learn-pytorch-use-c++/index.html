@@ -11,8 +11,7 @@
   <meta name="description" content="C&#43;&#43;で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。
 本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC&#43;&#43;で使用する方法を書きます。
 パラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。 下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができる。
-with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = net.linear1.weight.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) C&#43;&#43;からの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC&#43;&#43;からバイナリファイルを読み込んで使用すれば良い(詳しくはソースコードを参照ください)
-!(PyTorchのLinearのメモレイアウト)[/img/using-pytorch-model-in-c&#43;&#43;/pytorch_linear_A.png]">
+with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = net.linear1.weight.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) C&#43;&#43;からの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC&#43;&#43;からバイナリファイルを読み込んで使用すれば良い(詳しくはソースコードを参照ください)">
   <meta name="author" content="tanzaku"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -61,9 +60,9 @@ with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = 
     "name" : "tanzaku"
   },
   "headline": "PyTorchで学習した結果をC\u002b\u002bから利用する(Linearレイヤーのみ)",
-  "description" : "C\u002b\u002bで作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。\n本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC\u002b\u002bで使用する方法を書きます。\nパラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。 下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができる。\nwith open(\u0026#39;data\/weight_row=16_col=32.bin\u0026#39;, mode=\u0026#39;wb\u0026#39;) as f: x = net.linear1.weight.to(\u0026#39;cpu\u0026#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(\u0026#39;cpu\u0026#39;).detach().numpy() x.tofile(f) C\u002b\u002bからの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC\u002b\u002bからバイナリファイルを読み込んで使用すれば良い(詳しくはソースコードを参照ください)\n!(PyTorchのLinearのメモレイアウト)[\/img\/using-pytorch-model-in-c\u002b\u002b\/pytorch_linear_A.png]",
+  "description" : "C\u002b\u002bで作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。\n本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC\u002b\u002bで使用する方法を書きます。\nパラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。 下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができる。\nwith open(\u0026#39;data\/weight_row=16_col=32.bin\u0026#39;, mode=\u0026#39;wb\u0026#39;) as f: x = net.linear1.weight.to(\u0026#39;cpu\u0026#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(\u0026#39;cpu\u0026#39;).detach().numpy() x.tofile(f) C\u002b\u002bからの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC\u002b\u002bからバイナリファイルを読み込んで使用すれば良い(詳しくはソースコードを参照ください)",
   "inLanguage" : "ja",
-  "wordCount":  25 ,
+  "wordCount":  24 ,
   "datePublished" : "2020-08-15T21:48:39",
   "dateModified" : "2020-08-15T21:48:39",
   "image" : "https:\/\/tanzaku.github.io\/img\/avatar-icon.png",
@@ -86,8 +85,7 @@ with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = 
 <meta property="og:description" content="C&#43;&#43;で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込みたいなと思い調査しました。
 本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC&#43;&#43;で使用する方法を書きます。
 パラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。 下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができる。
-with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = net.linear1.weight.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) C&#43;&#43;からの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC&#43;&#43;からバイナリファイルを読み込んで使用すれば良い(詳しくはソースコードを参照ください)
-!(PyTorchのLinearのメモレイアウト)[/img/using-pytorch-model-in-c&#43;&#43;/pytorch_linear_A.png]">
+with open(&#39;data/weight_row=16_col=32.bin&#39;, mode=&#39;wb&#39;) as f: x = net.linear1.weight.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(&#39;cpu&#39;).detach().numpy() x.tofile(f) C&#43;&#43;からの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC&#43;&#43;からバイナリファイルを読み込んで使用すれば良い(詳しくはソースコードを参照ください)">
 <meta property="og:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
 <meta property="og:url" content="https://tanzaku.github.io/post/learn-pytorch-use-c&#43;&#43;/" />
 <meta property="og:type" content="website" />
@@ -263,7 +261,7 @@ if (!doNotTrack) {
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分間
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;25&nbsp;言葉
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;24&nbsp;言葉
   
   
     
@@ -301,7 +299,7 @@ if (!doNotTrack) {
     <span class="n">x</span><span class="o">.</span><span class="n">tofile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 </code></pre></div><h2 id="cからの利用">C++からの利用</h2>
 <p>この時<code>A</code>のバイナリ中の要素の並びは下図のようになっているので、あとは普通にC++からバイナリファイルを読み込んで使用すれば良い(詳しくは<a href="https://github.com/tanzaku/pytorch_model_layout">ソースコード</a>を参照ください)<br>
-!(PyTorchのLinearのメモレイアウト)[/img/using-pytorch-model-in-c++/pytorch_linear_A.png]</p>
+<img src="./img/using-pytorch-model-in-c++/pytorch_linear_A.png" alt="PyTorchのLinearのメモレイアウト"></p>
 
 
         
