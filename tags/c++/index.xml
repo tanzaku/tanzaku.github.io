@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on tanzaku&#39;s blog</title>
+    <link>https://tanzaku.github.io/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on tanzaku&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Oct 2020 21:07:05 +0900</lastBuildDate>
+    
+	<atom:link href="https://tanzaku.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fully_statically_link_in_c&#43;&#43;</title>
+      <link>https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/</link>
+      <pubDate>Wed, 28 Oct 2020 21:07:05 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/</guid>
+      <description>C++でLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C++の情報はあまり出てこなかったのでメモ。
+radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
+makeやcmakeの入っているのでそれらを使ったビルドも可。
+やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
+docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &amp;#34;g++ -static src/main.cpp -std=c++17 -O2&amp;#34; </description>
+    </item>
+    
+  </channel>
+</rss>

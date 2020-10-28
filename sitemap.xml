@@ -9,6 +9,11 @@
   </url>
   
   <url>
+    <loc>https://tanzaku.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2020-10-28T21:07:05+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/</loc>
     <lastmod>2020-10-28T21:07:05+09:00</lastmod>
   </url>
@@ -19,17 +24,17 @@
   </url>
   
   <url>
+    <loc>https://tanzaku.github.io/tags/</loc>
+    <lastmod>2020-10-28T21:07:05+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tanzaku.github.io/tags/pytorch/</loc>
     <lastmod>2020-08-15T21:48:39+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://tanzaku.github.io/post/learn-pytorch-use-c&#43;&#43;/</loc>
-    <lastmod>2020-08-15T21:48:39+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanzaku.github.io/tags/</loc>
     <lastmod>2020-08-15T21:48:39+09:00</lastmod>
   </url>
   

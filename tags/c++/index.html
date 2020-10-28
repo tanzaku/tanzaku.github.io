@@ -7,12 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Fully_statically_link_in_c&#43;&#43; - tanzaku&#39;s blog</title>
-  <meta name="description" content="C&#43;&#43;でLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
-radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
-makeやcmakeの入っているのでそれらを使ったビルドも可。
-やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
-docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static src/main.cpp -std=c&#43;&#43;17 -O2&#34; ">
+  <title>C&#43;&#43; - tanzaku&#39;s blog</title>
   <meta name="author" content="tanzaku"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -33,71 +28,14 @@ docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g
   
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@id": "https:\/\/tanzaku.github.io",
-          "name": "home"
-        }
-    },{
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@id": "https:\/\/tanzaku.github.io\/post\/fully_statically_link_in_c\u002b\u002b\/",
-          "name": "Fully statically link in c\u002b\u002b"
-        }
-    }]
-}
-</script><script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "author": {
-    "name" : "tanzaku"
-  },
-  "headline": "Fully_statically_link_in_c\u002b\u002b",
-  "description" : "C\u002b\u002bでLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C\u002b\u002bの情報はあまり出てこなかったのでメモ。\nradupopescu\/musl-builderというdocker imageを使用してビルドすればいい。\nmakeやcmakeの入っているのでそれらを使ったビルドも可。\nやってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。\ndocker run --rm -it -w \/src -v $(pwd):\/src radupopescu\/musl-builder sh -c \u0026#34;g\u002b\u002b -static src\/main.cpp -std=c\u002b\u002b17 -O2\u0026#34; ",
-  "inLanguage" : "ja",
-  "wordCount":  23 ,
-  "datePublished" : "2020-10-28T21:07:05",
-  "dateModified" : "2020-10-28T21:07:05",
-  "image" : "https:\/\/tanzaku.github.io\/img\/avatar-icon.png",
-  "keywords" : [ "C\u002b\u002b" ],
-  "mainEntityOfPage" : "https:\/\/tanzaku.github.io\/post\/fully_statically_link_in_c\u002b\u002b\/",
-  "publisher" : {
-    "@type": "Organization",
-    "name" : "https:\/\/tanzaku.github.io",
-    "logo" : {
-        "@type" : "ImageObject",
-        "url" : "https:\/\/tanzaku.github.io\/img\/avatar-icon.png",
-        "height" :  60 ,
-        "width" :  60
-    }
-  }
-}
-</script>
 
-<meta property="og:title" content="Fully_statically_link_in_c&#43;&#43;" />
-<meta property="og:description" content="C&#43;&#43;でLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
-radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
-makeやcmakeの入っているのでそれらを使ったビルドも可。
-やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
-docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static src/main.cpp -std=c&#43;&#43;17 -O2&#34; ">
+<meta property="og:title" content="C&#43;&#43;" />
 <meta property="og:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
-<meta property="og:url" content="https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/" />
+<meta property="og:url" content="https://tanzaku.github.io/tags/c&#43;&#43;/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="tanzaku&#39;s blog" />
 
-  <meta name="twitter:title" content="Fully_statically_link_in_c&#43;&#43;" />
-  <meta name="twitter:description" content="C&#43;&#43;でLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
-radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
-makeやcmakeの入っているのでそれらを使ったビルドも可。
-やってることはAlpine linuxで-staticオプションをつけてビルドして …">
+  <meta name="twitter:title" content="C&#43;&#43;" />
   <meta name="twitter:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@_tanzaku_" />
@@ -248,14 +186,40 @@ if (!doNotTrack) {
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-heading">
+            <div class="tags-heading">
               
-                <h1>Fully_statically_link_in_c&#43;&#43;</h1>
-              
-              
+                <h1>C&#43;&#43;</h1>
               
               
-                <span class="post-meta">
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container" role="main">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+    <a href="https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/">
+        <h2 class="post-title">Fully_statically_link_in_c&#43;&#43;</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
   
   
   <i class="fas fa-calendar"></i>&nbsp;October 28, 2020に投稿
@@ -275,20 +239,9 @@ if (!doNotTrack) {
 </span>
 
 
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-    
-<div class="container" role="main">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      <article role="main" class="blog-post">
+    </p>
+    <div class="post-entry">
+        
         <h1 id="cでlinux用のシングルバイナリを作成する">C++でLinux用のシングルバイナリを作成する</h1>
 <p>Rustで作成する方法は検索すると多数出てくるが、C++の情報はあまり出てこなかったのでメモ。<br>
 <code>radupopescu/musl-builder</code>というdocker imageを使用してビルドすればいい。<br>
@@ -296,99 +249,24 @@ makeやcmakeの入っているのでそれらを使ったビルドも可。<br>
 やってることはAlpine linuxで<code>-static</code>オプションをつけてビルドしてるだけ。</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">docker run --rm -it -w /src -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/src radupopescu/musl-builder sh -c <span class="s2">&#34;g++ -static src/main.cpp -std=c++17 -O2&#34;</span>
 </code></pre></div>
-
         
-          <div class="blog-tags">
-            
-              <a href="https://tanzaku.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
-            
-          </div>
-        
+    </div>
 
+    
+    <div class="blog-tags">
         
-            <hr/>
-            <section id="social-share">
-              <div class="list-inline footer-links">
-                
-
-<div class="share-box" aria-hidden="true">
-    <ul class="share">
-      
-      <li>
-        <a href="//twitter.com/share?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;text=Fully_statically_link_in_c%2b%2b&amp;via=_tanzaku_" target="_blank" title="Share on Twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-  
-      
-      <li>
-        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f" target="_blank" title="Share on Facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-  
-      
-      <li>
-        <a href="//reddit.com/submit?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;title=Fully_statically_link_in_c%2b%2b" target="_blank" title="Share on Reddit">
-          <i class="fab fa-reddit"></i>
-        </a>
-      </li>
-  
-      
-      <li>
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;title=Fully_statically_link_in_c%2b%2b" target="_blank" title="Share on LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-  
-      
-      <li>
-        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;title=Fully_statically_link_in_c%2b%2b" target="_blank" title="Share on StumbleUpon">
-          <i class="fab fa-stumbleupon"></i>
-        </a>
-      </li>
-  
-      
-      <li>
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;description=Fully_statically_link_in_c%2b%2b" target="_blank" title="Share on Pinterest">
-          <i class="fab fa-pinterest"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-  
-
-              </div>
-            </section>
+        <a href="https://tanzaku.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a>&nbsp;
         
+    </div>
+    
 
-        
+</article>
           
-
-          
+        </div>
         
-      </article>
-
-      
-        <ul class="pager blog-pager">
-          
-            <li class="previous">
-              <a href="https://tanzaku.github.io/post/learn-pytorch-use-c&#43;&#43;/" data-toggle="tooltip" data-placement="top" title="PyTorchで学習した結果をC&#43;&#43;から利用する(Linearレイヤーのみ)">&larr; 前ページ</a>
-            </li>
-          
-          
-        </ul>
-      
-
-
-      
-        
-        
-      
-
+      </div>
     </div>
   </div>
-</div>
 
       
 <footer>
@@ -431,7 +309,7 @@ makeやcmakeの入っているのでそれらを使ったビルドも可。<br>
               </li>
           
           <li>
-            <a href="" title="RSS">
+            <a href="/tags/c&#43;&#43;/index.xml" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
