@@ -17,10 +17,9 @@
       
       <guid>https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/</guid>
       <description>Rustで作成する方法は検索すると多数出てくるが、C++の情報はあまり出てこなかったのでメモ。
-radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
-makeやcmakeの入っているのでそれらを使ったビルドも可。
-やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
-docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &amp;#34;g++ -static src/main.cpp -std=c++17 -O2&amp;#34; </description>
+radupopescu/musl-builderというdocker imageを使用して下記のようにビルドすればいい。
+docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &amp;#34;g++ -static src/main.cpp -std=c++17 -O2&amp;#34; makeやcmakeの入っているのでそれらを使ったビルドも可。
+やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。</description>
     </item>
     
     <item>

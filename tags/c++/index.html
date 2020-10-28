@@ -243,11 +243,11 @@ if (!doNotTrack) {
     <div class="post-entry">
         
         <p>Rustで作成する方法は検索すると多数出てくるが、C++の情報はあまり出てこなかったのでメモ。<br>
-<code>radupopescu/musl-builder</code>というdocker imageを使用してビルドすればいい。<br>
-makeやcmakeの入っているのでそれらを使ったビルドも可。<br>
-やってることはAlpine linuxで<code>-static</code>オプションをつけてビルドしてるだけ。</p>
+<code>radupopescu/musl-builder</code>というdocker imageを使用して下記のようにビルドすればいい。</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">docker run --rm -it -w /src -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/src radupopescu/musl-builder sh -c <span class="s2">&#34;g++ -static src/main.cpp -std=c++17 -O2&#34;</span>
-</code></pre></div>
+</code></pre></div><p>makeやcmakeの入っているのでそれらを使ったビルドも可。<br>
+やってることはAlpine linuxで<code>-static</code>オプションをつけてビルドしてるだけ。</p>
+
         
     </div>
 

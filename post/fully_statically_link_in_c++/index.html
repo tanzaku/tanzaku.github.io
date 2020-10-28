@@ -9,10 +9,9 @@
 
   <title>C&#43;&#43;でLinux用のシングルバイナリを作成する - tanzaku&#39;s blog</title>
   <meta name="description" content="Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
-radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
-makeやcmakeの入っているのでそれらを使ったビルドも可。
-やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
-docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static src/main.cpp -std=c&#43;&#43;17 -O2&#34; ">
+radupopescu/musl-builderというdocker imageを使用して下記のようにビルドすればいい。
+docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static src/main.cpp -std=c&#43;&#43;17 -O2&#34; makeやcmakeの入っているのでそれらを使ったビルドも可。
+やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。">
   <meta name="author" content="tanzaku"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -61,7 +60,7 @@ docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g
     "name" : "tanzaku"
   },
   "headline": "C\u002b\u002bでLinux用のシングルバイナリを作成する",
-  "description" : "Rustで作成する方法は検索すると多数出てくるが、C\u002b\u002bの情報はあまり出てこなかったのでメモ。\nradupopescu\/musl-builderというdocker imageを使用してビルドすればいい。\nmakeやcmakeの入っているのでそれらを使ったビルドも可。\nやってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。\ndocker run --rm -it -w \/src -v $(pwd):\/src radupopescu\/musl-builder sh -c \u0026#34;g\u002b\u002b -static src\/main.cpp -std=c\u002b\u002b17 -O2\u0026#34; ",
+  "description" : "Rustで作成する方法は検索すると多数出てくるが、C\u002b\u002bの情報はあまり出てこなかったのでメモ。\nradupopescu\/musl-builderというdocker imageを使用して下記のようにビルドすればいい。\ndocker run --rm -it -w \/src -v $(pwd):\/src radupopescu\/musl-builder sh -c \u0026#34;g\u002b\u002b -static src\/main.cpp -std=c\u002b\u002b17 -O2\u0026#34; makeやcmakeの入っているのでそれらを使ったビルドも可。\nやってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。",
   "inLanguage" : "ja",
   "wordCount":  22 ,
   "datePublished" : "2020-10-28T21:07:05",
@@ -84,10 +83,9 @@ docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g
 
 <meta property="og:title" content="C&#43;&#43;でLinux用のシングルバイナリを作成する" />
 <meta property="og:description" content="Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
-radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
-makeやcmakeの入っているのでそれらを使ったビルドも可。
-やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
-docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static src/main.cpp -std=c&#43;&#43;17 -O2&#34; ">
+radupopescu/musl-builderというdocker imageを使用して下記のようにビルドすればいい。
+docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static src/main.cpp -std=c&#43;&#43;17 -O2&#34; makeやcmakeの入っているのでそれらを使ったビルドも可。
+やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。">
 <meta property="og:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
 <meta property="og:url" content="https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/" />
 <meta property="og:type" content="website" />
@@ -95,10 +93,8 @@ docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g
 
   <meta name="twitter:title" content="C&#43;&#43;でLinux用のシングルバイナリを作成する" />
   <meta name="twitter:description" content="Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
-radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
-makeやcmakeの入っているのでそれらを使ったビルドも可。
-やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
-docker run --rm -it …">
+radupopescu/musl-builderというdocker imageを使用して下記のようにビルドすればいい。
+docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static …">
   <meta name="twitter:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@_tanzaku_" />
@@ -291,11 +287,11 @@ if (!doNotTrack) {
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <p>Rustで作成する方法は検索すると多数出てくるが、C++の情報はあまり出てこなかったのでメモ。<br>
-<code>radupopescu/musl-builder</code>というdocker imageを使用してビルドすればいい。<br>
-makeやcmakeの入っているのでそれらを使ったビルドも可。<br>
-やってることはAlpine linuxで<code>-static</code>オプションをつけてビルドしてるだけ。</p>
+<code>radupopescu/musl-builder</code>というdocker imageを使用して下記のようにビルドすればいい。</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">docker run --rm -it -w /src -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/src radupopescu/musl-builder sh -c <span class="s2">&#34;g++ -static src/main.cpp -std=c++17 -O2&#34;</span>
-</code></pre></div>
+</code></pre></div><p>makeやcmakeの入っているのでそれらを使ったビルドも可。<br>
+やってることはAlpine linuxで<code>-static</code>オプションをつけてビルドしてるだけ。</p>
+
 
         
           <div class="blog-tags">
