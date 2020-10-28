@@ -19,7 +19,7 @@
       <description>C++で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込むため調査しました。
 本記事ではLinear — PyTorch 1.6.0 documentationを使ったモデルで学習し、そのパラメータ(A,b)をC++で使用する方法を書きます。
 構築するネットワーク class Net(torch.nn.Module): def __init__(self): super(Net, self).__init__() self.linear1 = torch.nn.Linear(32, 16) self.linear2 = torch.nn.Linear(16, 1) def forward(self, x): x = self.linear1(x) x = self.linear2(x) return x 学習 略
-パラメータのファイルへの出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができます。
+パラメータをファイルに出力 Linear型のAはweightというTensor型の変数になっており、bはbiasというTensor型の変数になっています。下記のようにするとTensor型のA,bからnumpyの生のデータを取り出しバイナリに出力することができます。
 with open(&amp;#39;data/weight_row=16_col=32.bin&amp;#39;, mode=&amp;#39;wb&amp;#39;) as f: x = net.linear1.weight.to(&amp;#39;cpu&amp;#39;).detach().numpy() x.tofile(f) x = net.linear1.bias.to(&amp;#39;cpu&amp;#39;).detach().numpy() x.tofile(f) C++からの利用 この時Aのバイナリ中の要素の並びは下図のようになっているので、あとは普通にC++からバイナリファイルを読み込んで使用すれば良いです(詳しくはここを参照ください)</description>
     </item>
     

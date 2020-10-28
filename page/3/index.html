@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>PyTorch - tanzaku&#39;s blog</title>
+  <title>tanzaku&#39;s blog - tanzaku&#39;s blog</title>
+  <meta name="description" content="Front Page Content とりあえず空">
   <meta name="author" content="tanzaku"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -29,13 +30,15 @@
 }
 </script>
 
-<meta property="og:title" content="PyTorch" />
+<meta property="og:title" content="tanzaku&#39;s blog" />
+<meta property="og:description" content="Front Page Content とりあえず空">
 <meta property="og:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
-<meta property="og:url" content="https://tanzaku.github.io/tags/pytorch/" />
+<meta property="og:url" content="https://tanzaku.github.io/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="tanzaku&#39;s blog" />
 
-  <meta name="twitter:title" content="PyTorch" />
+  <meta name="twitter:title" content="tanzaku&#39;s blog" />
+  <meta name="twitter:description" content="Front Page Content とりあえず空">
   <meta name="twitter:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@_tanzaku_" />
@@ -186,13 +189,17 @@ if (!doNotTrack) {
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="tags-heading">
+            <div class="page-heading">
               
-                <h1>PyTorch</h1>
+                <h1>tanzaku&#39;s blog</h1>
               
               
                 <hr class="small">
               
+              
+                
+                  <span class="page-subheading">気の向くままに</span>
+                
               
               
             </div>
@@ -204,15 +211,23 @@ if (!doNotTrack) {
 
 
     
-  <div class="container" role="main">
+  <div role="main" class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
+          <div class="well">
+            <h2 id="front-page-content">Front Page Content</h2>
+<p>とりあえず空</p>
+
+          </div>
+        
+
         <div class="posts-list">
           
+          
             <article class="post-preview">
-    <a href="https://tanzaku.github.io/post/learn-pytorch-use-c&#43;&#43;/">
-        <h2 class="post-title">PyTorchで学習した結果をC&#43;&#43;から利用する(Linearレイヤーのみ)</h2>
+    <a href="https://tanzaku.github.io/post/2020-07-02-create-blog/">
+        <h2 class="post-title">Create Blog</h2>
         
         
         
@@ -222,13 +237,13 @@ if (!doNotTrack) {
         <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;August 15, 2020に投稿
+  <i class="fas fa-calendar"></i>&nbsp;July 2, 2020に投稿
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分間
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;51&nbsp;言葉
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1&nbsp;言葉
   
   
     
@@ -242,55 +257,40 @@ if (!doNotTrack) {
     </p>
     <div class="post-entry">
         
-        <p>C++で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込むため調査しました。</p>
-<p>本記事では<a href="https://pytorch.org/docs/stable/generated/torch.nn.Linear.html">Linear — PyTorch 1.6.0 documentation</a>を使ったモデルで学習し、そのパラメータ(<code>A</code>,<code>b</code>)をC++で使用する方法を書きます。</p>
-<h2 id="構築するネットワーク">構築するネットワーク</h2>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Net</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">Net</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">linear1</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">linear2</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">x</span>
-</code></pre></div><h2 id="学習">学習</h2>
-<p>略</p>
-<h2 id="パラメータをファイルに出力">パラメータをファイルに出力</h2>
-<p>Linear型の<code>A</code>は<code>weight</code>というTensor型の変数になっており、<code>b</code>は<code>bias</code>というTensor型の変数になっています。下記のようにするとTensor型の<code>A</code>,<code>b</code>からnumpyの生のデータを取り出しバイナリに出力することができます。</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/weight_row=16_col=32.bin&#39;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">linear1</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;cpu&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
-    <span class="n">x</span><span class="o">.</span><span class="n">tofile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-
-    <span class="n">x</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">linear1</span><span class="o">.</span><span class="n">bias</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;cpu&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
-    <span class="n">x</span><span class="o">.</span><span class="n">tofile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</code></pre></div><h2 id="cからの利用">C++からの利用</h2>
-<p>この時<code>A</code>のバイナリ中の要素の並びは下図のようになっているので、あとは普通にC++からバイナリファイルを読み込んで使用すれば良いです(詳しくは<a href="https://github.com/tanzaku/pytorch_model_layout">ここ</a>を参照ください)<br>
-<img src="/img/using-pytorch-model-in-c++/pytorch_linear_A.png" alt="PyTorchのLinearのメモレイアウト"></p>
+        <p>ブログ開始</p>
 
         
     </div>
 
-    
-    <div class="blog-tags">
-        
-        <a href="https://tanzaku.github.io/tags/pytorch/">PyTorch</a>&nbsp;
-        
-        <a href="https://tanzaku.github.io/tags/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/">機械学習</a>&nbsp;
-        
-    </div>
     
 
 </article>
           
         </div>
+
+        
+          <ul class="pager main-pager">
+            
+              <li class="previous">
+                <a href="https://tanzaku.github.io/page/2/">&larr; 新しいページ</a>
+              </li>
+            
+            
+          </ul>
         
       </div>
     </div>
   </div>
 
       
+    <div class="page-meta">
+  
+  
+  
+</div>
+
+
+  
 <footer>
   <div class="container">
     <div class="row">
@@ -331,7 +331,7 @@ if (!doNotTrack) {
               </li>
           
           <li>
-            <a href="/tags/pytorch/index.xml" title="RSS">
+            <a href="/index.xml" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>

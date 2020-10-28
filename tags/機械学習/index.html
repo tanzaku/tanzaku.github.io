@@ -257,7 +257,7 @@ if (!doNotTrack) {
         <span class="k">return</span> <span class="n">x</span>
 </code></pre></div><h2 id="学習">学習</h2>
 <p>略</p>
-<h2 id="パラメータのファイルへの出力">パラメータのファイルへの出力</h2>
+<h2 id="パラメータをファイルに出力">パラメータをファイルに出力</h2>
 <p>Linear型の<code>A</code>は<code>weight</code>というTensor型の変数になっており、<code>b</code>は<code>bias</code>というTensor型の変数になっています。下記のようにするとTensor型の<code>A</code>,<code>b</code>からnumpyの生のデータを取り出しバイナリに出力することができます。</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/weight_row=16_col=32.bin&#39;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">linear1</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;cpu&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>

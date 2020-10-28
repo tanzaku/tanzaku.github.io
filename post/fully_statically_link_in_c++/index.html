@@ -7,7 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>PyTorch - tanzaku&#39;s blog</title>
+  <title>Fully_statically_link_in_c&#43;&#43; - tanzaku&#39;s blog</title>
+  <meta name="description" content="C&#43;&#43;でLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
+radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
+makeやcmakeの入っているのでそれらを使ったビルドも可。
+やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
+docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static src/main.cpp -std=c&#43;&#43;17 -O2&#34; ">
   <meta name="author" content="tanzaku"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -28,14 +33,71 @@
   
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/tanzaku.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/tanzaku.github.io\/post\/fully_statically_link_in_c\u002b\u002b\/",
+          "name": "Fully statically link in c\u002b\u002b"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "tanzaku"
+  },
+  "headline": "Fully_statically_link_in_c\u002b\u002b",
+  "description" : "C\u002b\u002bでLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C\u002b\u002bの情報はあまり出てこなかったのでメモ。\nradupopescu\/musl-builderというdocker imageを使用してビルドすればいい。\nmakeやcmakeの入っているのでそれらを使ったビルドも可。\nやってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。\ndocker run --rm -it -w \/src -v $(pwd):\/src radupopescu\/musl-builder sh -c \u0026#34;g\u002b\u002b -static src\/main.cpp -std=c\u002b\u002b17 -O2\u0026#34; ",
+  "inLanguage" : "ja",
+  "wordCount":  23 ,
+  "datePublished" : "2020-10-28T21:07:05",
+  "dateModified" : "2020-10-28T21:07:05",
+  "image" : "https:\/\/tanzaku.github.io\/img\/avatar-icon.png",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/tanzaku.github.io\/post\/fully_statically_link_in_c\u002b\u002b\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/tanzaku.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/tanzaku.github.io\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
 
-<meta property="og:title" content="PyTorch" />
+<meta property="og:title" content="Fully_statically_link_in_c&#43;&#43;" />
+<meta property="og:description" content="C&#43;&#43;でLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
+radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
+makeやcmakeの入っているのでそれらを使ったビルドも可。
+やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
+docker run --rm -it -w /src -v $(pwd):/src radupopescu/musl-builder sh -c &#34;g&#43;&#43; -static src/main.cpp -std=c&#43;&#43;17 -O2&#34; ">
 <meta property="og:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
-<meta property="og:url" content="https://tanzaku.github.io/tags/pytorch/" />
+<meta property="og:url" content="https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="tanzaku&#39;s blog" />
 
-  <meta name="twitter:title" content="PyTorch" />
+  <meta name="twitter:title" content="Fully_statically_link_in_c&#43;&#43;" />
+  <meta name="twitter:description" content="C&#43;&#43;でLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C&#43;&#43;の情報はあまり出てこなかったのでメモ。
+radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
+makeやcmakeの入っているのでそれらを使ったビルドも可。
+やってることはAlpine linuxで-staticオプションをつけてビルドして …">
   <meta name="twitter:image" content="https://tanzaku.github.io/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@_tanzaku_" />
@@ -186,49 +248,23 @@ if (!doNotTrack) {
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="tags-heading">
+            <div class="post-heading">
               
-                <h1>PyTorch</h1>
-              
-              
-                <hr class="small">
+                <h1>Fully_statically_link_in_c&#43;&#43;</h1>
               
               
               
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-    
-  <div class="container" role="main">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="posts-list">
-          
-            <article class="post-preview">
-    <a href="https://tanzaku.github.io/post/learn-pytorch-use-c&#43;&#43;/">
-        <h2 class="post-title">PyTorchで学習した結果をC&#43;&#43;から利用する(Linearレイヤーのみ)</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
+              
+                <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;August 15, 2020に投稿
+  <i class="fas fa-calendar"></i>&nbsp;October 28, 2020に投稿
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分間
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;51&nbsp;言葉
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;23&nbsp;言葉
   
   
     
@@ -239,56 +275,114 @@ if (!doNotTrack) {
 </span>
 
 
-    </p>
-    <div class="post-entry">
-        
-        <p>C++で作成したCPUで動作する麻雀AIに、機械学習モデルを組み込むため調査しました。</p>
-<p>本記事では<a href="https://pytorch.org/docs/stable/generated/torch.nn.Linear.html">Linear — PyTorch 1.6.0 documentation</a>を使ったモデルで学習し、そのパラメータ(<code>A</code>,<code>b</code>)をC++で使用する方法を書きます。</p>
-<h2 id="構築するネットワーク">構築するネットワーク</h2>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Net</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">(</span><span class="n">Net</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">linear1</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">linear2</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">x</span>
-</code></pre></div><h2 id="学習">学習</h2>
-<p>略</p>
-<h2 id="パラメータをファイルに出力">パラメータをファイルに出力</h2>
-<p>Linear型の<code>A</code>は<code>weight</code>というTensor型の変数になっており、<code>b</code>は<code>bias</code>というTensor型の変数になっています。下記のようにするとTensor型の<code>A</code>,<code>b</code>からnumpyの生のデータを取り出しバイナリに出力することができます。</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data/weight_row=16_col=32.bin&#39;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">linear1</span><span class="o">.</span><span class="n">weight</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;cpu&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
-    <span class="n">x</span><span class="o">.</span><span class="n">tofile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-
-    <span class="n">x</span> <span class="o">=</span> <span class="n">net</span><span class="o">.</span><span class="n">linear1</span><span class="o">.</span><span class="n">bias</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;cpu&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">detach</span><span class="p">()</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
-    <span class="n">x</span><span class="o">.</span><span class="n">tofile</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</code></pre></div><h2 id="cからの利用">C++からの利用</h2>
-<p>この時<code>A</code>のバイナリ中の要素の並びは下図のようになっているので、あとは普通にC++からバイナリファイルを読み込んで使用すれば良いです(詳しくは<a href="https://github.com/tanzaku/pytorch_model_layout">ここ</a>を参照ください)<br>
-<img src="/img/using-pytorch-model-in-c++/pytorch_linear_A.png" alt="PyTorchのLinearのメモレイアウト"></p>
-
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-        <a href="https://tanzaku.github.io/tags/pytorch/">PyTorch</a>&nbsp;
-        
-        <a href="https://tanzaku.github.io/tags/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/">機械学習</a>&nbsp;
-        
-    </div>
-    
-
-</article>
-          
+              
+            </div>
+          </div>
         </div>
-        
       </div>
     </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h1 id="cでlinux用のシングルバイナリを作成する">C++でLinux用のシングルバイナリを作成する</h1>
+<p>Rustで作成する方法は検索すると多数出てくるが、C++の情報はあまり出てこなかったのでメモ。<br>
+<code>radupopescu/musl-builder</code>というdocker imageを使用してビルドすればいい。<br>
+makeやcmakeの入っているのでそれらを使ったビルドも可。<br>
+やってることはAlpine linuxで<code>-static</code>オプションをつけてビルドしてるだけ。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">docker run --rm -it -w /src -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/src radupopescu/musl-builder sh -c <span class="s2">&#34;g++ -static src/main.cpp -std=c++17 -O2&#34;</span>
+</code></pre></div>
+
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;text=Fully_statically_link_in_c%2b%2b&amp;via=_tanzaku_" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;title=Fully_statically_link_in_c%2b%2b" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;title=Fully_statically_link_in_c%2b%2b" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;title=Fully_statically_link_in_c%2b%2b" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2ftanzaku.github.io%2fpost%2ffully_statically_link_in_c%2b%2b%2f&amp;description=Fully_statically_link_in_c%2b%2b" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
   </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://tanzaku.github.io/post/learn-pytorch-use-c&#43;&#43;/" data-toggle="tooltip" data-placement="top" title="PyTorchで学習した結果をC&#43;&#43;から利用する(Linearレイヤーのみ)">&larr; 前ページ</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
 
       
 <footer>
@@ -331,7 +425,7 @@ if (!doNotTrack) {
               </li>
           
           <li>
-            <a href="/tags/pytorch/index.xml" title="RSS">
+            <a href="" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
