@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>C&#43;&#43;でLinux用のシングルバイナリを作成する</title>
+      <title>C&#43;&#43;でLinux用の静的リンクされたバイナリを作成する</title>
       <link>https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/</link>
       <pubDate>Wed, 28 Oct 2020 21:07:05 +0900</pubDate>
       
