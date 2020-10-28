@@ -11,12 +11,12 @@
     
     
     <item>
-      <title>Fully_statically_link_in_c&#43;&#43;</title>
+      <title>C&#43;&#43;でLinux用のシングルバイナリを作成する</title>
       <link>https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/</link>
       <pubDate>Wed, 28 Oct 2020 21:07:05 +0900</pubDate>
       
       <guid>https://tanzaku.github.io/post/fully_statically_link_in_c&#43;&#43;/</guid>
-      <description>C++でLinux用のシングルバイナリを作成する Rustで作成する方法は検索すると多数出てくるが、C++の情報はあまり出てこなかったのでメモ。
+      <description>Rustで作成する方法は検索すると多数出てくるが、C++の情報はあまり出てこなかったのでメモ。
 radupopescu/musl-builderというdocker imageを使用してビルドすればいい。
 makeやcmakeの入っているのでそれらを使ったビルドも可。
 やってることはAlpine linuxで-staticオプションをつけてビルドしてるだけ。
