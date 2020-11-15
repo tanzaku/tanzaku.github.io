@@ -226,6 +226,55 @@ if (!doNotTrack) {
           
           
             <article class="post-preview">
+    <a href="https://tanzaku.github.io/post/2020-07-10-rust-fork-retry-resource-temporarily-unavailable/">
+        <h2 class="post-title">Rustからのプロセス起動時に fork: retry: Resource temporarily unavailable が発生した場合の対応メモ</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;July 10, 2020に投稿
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;分間
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;7&nbsp;言葉
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;tanzaku
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>Rustで生存期間が短いプロセスを短時間で起動、終了を繰り返すプログラムを書いたところ<code>fork: retry: Resource temporarily unavailable</code>というエラーが発生。<br>
+psコマンドで確認したところ<code>&lt;defunct&gt;</code>と書かれたゾンビプロセスが大量に残存していた。</p>
+<p><a href="https://doc.rust-lang.org/std/process/struct.Child.html#method.wait">wait</a>でプロセスの終了を待つとゾンビプロセスは残存しなくなった。</p>
+
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+        <a href="https://tanzaku.github.io/tags/rust/">Rust</a>&nbsp;
+        
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://tanzaku.github.io/post/2020-07-02-create-blog/">
         <h2 class="post-title">Create Blog</h2>
         
