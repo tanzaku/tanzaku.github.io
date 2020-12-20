@@ -5,10 +5,28 @@
     <link>https://tanzaku.github.io/</link>
     <description>Recent content on tanzaku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Nov 2020 17:50:13 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 20 Dec 2020 11:25:11 +0900</lastBuildDate>
     
 	<atom:link href="https://tanzaku.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu_tips</title>
+      <link>https://tanzaku.github.io/post/ubuntu_tips/</link>
+      <pubDate>Sun, 20 Dec 2020 11:25:11 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/ubuntu_tips/</guid>
+      <description> ファイル選択ダイアログでCtrl+Lでアドレス直接入力できる  </description>
+    </item>
+    
+    <item>
+      <title>ThinkPad_T14_Gen1_AMD_install_ubuntu</title>
+      <link>https://tanzaku.github.io/post/thinkpad_t14_gen1_amd_install_ubuntu/</link>
+      <pubDate>Fri, 18 Dec 2020 22:44:24 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/thinkpad_t14_gen1_amd_install_ubuntu/</guid>
+      <description>回復ドライブの作成 Bitlocker（デバイスの暗号化）をオフに 高速スタートアップを無効化 UbuntuのライブUSBを差し込み、シャットダウンして起動し、起動中にF12連打 bootメニューからUSBを選んでインストール（今回はデュアルブートにした） ThinkPad T14 Gen1 (AMD)にUbuntu 20.10をインストールした際のメモ  BIOSの電源スリープの設定を変更する Canonicalパートナーのリポジトリを有効にする 音は普通に鳴ったのでそのまま   アプリのインストールなど  mozc追加(Ubuntu 20.04で日本語入力 (iBus – Mozc, Fcitx – Mozc)│きなこあんこん) chromeインストール(UbuntuにChromeをインストールする - Qiita) g++, curl, git, wget, javaインストール(default-jre default-jdk), rustup, g++, curl, git, wget, python, golang, docker, docker-compose, vscode, typora 指紋認証ログイン有効化(Settings -&amp;gt; Users -&amp;gt; Fingerprint Login) chromeにlastpassインストール    参考  ThinkPad T14 Gen 1 SSD換装（純正SSDから交換） - ThinkPad while drinking Whisky Windows 10 回復ドライブの作成と実行手順 | パソコン工房 NEXMAG ThinkPad T14 Gen1 (AMD)にUbuntu 20.</description>
+    </item>
     
     <item>
       <title>HACK TO THE FUTURE 2021 予選</title>

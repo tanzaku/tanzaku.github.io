@@ -4,8 +4,23 @@
   
   <url>
     <loc>https://tanzaku.github.io/</loc>
-    <lastmod>2020-11-15T17:50:13+09:00</lastmod>
+    <lastmod>2020-12-20T11:25:11+09:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tanzaku.github.io/post/</loc>
+    <lastmod>2020-12-20T11:25:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanzaku.github.io/post/ubuntu_tips/</loc>
+    <lastmod>2020-12-20T11:25:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tanzaku.github.io/post/thinkpad_t14_gen1_amd_install_ubuntu/</loc>
+    <lastmod>2020-12-18T22:44:24+09:00</lastmod>
   </url>
   
   <url>
@@ -20,11 +35,6 @@
   
   <url>
     <loc>https://tanzaku.github.io/tags/marathonmatch/</loc>
-    <lastmod>2020-11-15T17:50:13+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://tanzaku.github.io/post/</loc>
     <lastmod>2020-11-15T17:50:13+09:00</lastmod>
   </url>
   
