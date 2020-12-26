@@ -5,10 +5,49 @@
     <link>https://tanzaku.github.io/tags/todo/</link>
     <description>Recent content in todo on tanzaku&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Aug 2020 00:32:48 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 26 Dec 2020 10:04:07 +0900</lastBuildDate>
     
 	<atom:link href="https://tanzaku.github.io/tags/todo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 12 26 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-12-26-diary/</link>
+      <pubDate>Sat, 26 Dec 2020 10:04:07 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-12-26-diary/</guid>
+      <description>ルーチンワーク
+ 読書 2ポモドーロ コンテスト復習 2ポモドーロ 自分語りブログ記事を書き進める 1ポモドーロ 日記を書く 1ポモドーロ  いつかやりたいこと   CSなどの勉強
+  英語勉強
+  電子工作
+  一人CPU実験
+  積読消化
+  データの可視化
+ 日本地図にマッピングしたり その他BIをさくっとかけるように    DB勉強
+ DB自作(Database Internals) 座学    あとで読む記事を読む
+  実用ツール開発
+ par light_judge cargo-inject    コンテスト復習
+ Codingame fall challenge  NNで強化学習 DUCT   MM122  BDD/ZDD SAT      読書 昨日に引き続きWEB+DBを読んだ。今日は興味あるところ以外は流し読みしたが、いろんな話題を扱ってる雑誌なのでそれでいいのかなと思った。少し文章を読むのに慣れてきた気がする。</description>
+    </item>
+    
+    <item>
+      <title>2020 12 25 Diary</title>
+      <link>https://tanzaku.github.io/post/2020-12-25-diary/</link>
+      <pubDate>Fri, 25 Dec 2020 20:56:32 +0900</pubDate>
+      
+      <guid>https://tanzaku.github.io/post/2020-12-25-diary/</guid>
+      <description>日記を再開します。去年の反省として惰性でコンテストに参加してしまっていて成長がなかったなというのがあるので、時間の使い方をある程度決めて日々それについてやったことを記録していく。というわけで下記のように時間を使うことにする。仕事が始まってからこれ続けられるかな…？
+ 読書 2ポモドーロ コンテスト復習 2ポモドーロ 自分語りブログ記事を書き進める 1ポモドーロ 日記を書く 1ポモドーロ  いつかやりたいこと   CSなどの勉強
+  英語勉強
+  電子工作
+  一人CPU実験
+  データの可視化
+ 日本地図にマッピングしたり その他BIをさくっとかけるように    DB勉強
+ DB自作(Database Internals) 座学    あとで読む記事を読む
+  実用ツール開発
+ par light_judge cargo-inject    コンテスト復習
+ Codingame fall challenge  NNで強化学習 DUCT   MM122  BDD/ZDD SAT      読書 WEB+DB118号のPythonの可視化の記事と脆弱性調査の記事の始めを読んだ。読んでる途中に他のことを考え出してしまう癖があり、記事を読むのがいまいち進まない。</description>
+    </item>
     
     <item>
       <title>2020 08 13 Diary</title>
